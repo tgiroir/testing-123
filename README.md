@@ -59,6 +59,8 @@
       <tr>
         <th>{{ 'customer.order.details.product' | t }}</th>
         <th>{{ 'customer.order.details.sku' | t }}</th>
+        <th>{{ 'customer.order.details.size' | t }}</th>
+        <th>{{ 'customer.order.details.length' | t }}</th>
         <th>{{ 'customer.order.details.price' | t }}</th>
         <th class="center">{{ 'customer.order.details.quantity' | t }}</th>
         <th class="center">{{ 'customer.order.details.total' | t }}</th>
@@ -81,6 +83,8 @@
           {% endif %}
         </td>
         <td class="sku note">{{ line_item.sku }}</td>
+        <td class="size">{{ line_item.size}}</td>
+        <td class="length">{{ line_item.length}}</td>
         <td class="money">{{ line_item.price | money }}</td>
         <td class="quantity center">{{ line_item.quantity }}</td>
         <td class="total money center">{{ line_item.quantity | times: line_item.price | money }}</td>
